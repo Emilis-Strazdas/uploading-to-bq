@@ -18,10 +18,10 @@ def upload_forecast(
     data_to_upload = pd.read_csv(FILENAME)
     LOGGER.info("Data read from CSV file successfully.")
 
-    gcp_settings.upload_to_bigquery(
-        data_frame=data_to_upload,
-        dataset_id=dataset_id,
-        table_id=table_id,
-        write_disposition='WRITE_TRUNCATE'
-    )
+    # gcp_settings.upload_to_bigquery(
+    #     data_frame=data_to_upload,
+    #     dataset_id=dataset_id,
+    #     table_id=table_id,
+    #     write_disposition='WRITE_TRUNCATE'
+    # )
     LOGGER.info("Data uploaded to BigQuery successfully.")

@@ -14,16 +14,15 @@ TABLE_ID = 'nordpass_b2b_forecast'
 def main():
     gcp_settings = GcpSettings()
     
-    # upload_forecast(
-    #     gcp_settings=gcp_settings,
-    #     dataset_id=DATASET_ID,
-    #     table_id=TABLE_ID,
-    # )
+    upload_forecast(
+        gcp_settings=gcp_settings,
+        dataset_id=DATASET_ID,
+        table_id=TABLE_ID,
+    )
     
     upload_budget(
         gcp_settings=gcp_settings,
         dataset_id=DATASET_ID,
-        table_id=TABLE_ID,
     )
 
 if __name__ == "__main__":
